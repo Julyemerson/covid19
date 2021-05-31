@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.data-covid {
+  @apply h-60 w-60 p-4 rounded-3xl shadow-xl;
+}
+
+.data-covid-numbers {
+  @apply text-center mt-14 text-3xl text-gray-200;
+}
+
+.data-covid-top-text {
+  @apply text-gray-50 text-center tracking-wider font-semibold text-xl;
+}

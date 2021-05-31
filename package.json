@@ -1,0 +1,28 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack server --mode=development --config webpack.config.js",
+    "build": "babel ./src/main.js -o ./public/bundle.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.2.6",
+    "postcss": "^8.3.0",
+    "postcss-loader": "^5.3.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.1.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

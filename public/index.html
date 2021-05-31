@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="style/css" href="src/assets/css/main.css" />
+    <title>Covid 19 - Dados Globais</title>
+  </head>
+  <body class="bg-gray-200">
+    <h1 class="text-4xl font-bold text-center text-indigo-700 mt-10">
+      Dados <span data-js="text-country-top">Globais</span> - Covid 19
+    </h1>
+    <div class="flex flex-row gap-5 justify-center mt-10">
+      <div class="data-covid bg-indigo-400 hover:bg-indigo-500">
+        <h3 class="data-covid-top-text">CONFIRMADOS</h3>
+        <h3 data-js="data-confirmed" class="data-covid-numbers">0</h3>
+      </div>
+      <div class="data-covid bg-indigo-500 hover:bg-indigo-600">
+        <h3 class="data-covid-top-text">MORTES</h3>
+        <h3 data-js="data-deaths" class="data-covid-numbers">0</h3>
+      </div>
+      <div class="data-covid bg-indigo-600 hover:bg-indigo-700">
+        <h3 class="data-covid-top-text">RECUPERADOS</h3>
+        <h3 data-js="data-recovered" class="data-covid-numbers">0</h3>
+      </div>
+      <div class="data-covid bg-indigo-700 hover:bg-indigo-800">
+        <h3 class="data-covid-top-text">ATIVOS</h3>
+        <h3 data-js="data-active" class="data-covid-numbers">0</h3>
+      </div>
+    </div>
+    <div class="flex gap-5 justify-center">
+      <label class="mt-10" for="date1"> Data Inicial: </label>
+      <input
+        class="w-40 mt-10"
+        type="date"
+        name="date1"
+        min="2020-01-01"
+        placeholder="2020/01/01"
+        data-js="initial-date"
+      />
+      <label class="mt-10" for="date2">Data Final: </label>
+      <input type="date" class="w-40 mt-10" name="date2" data-js="final-date" />
+    </div>
+    <div class="flex flex-row gap-5 justify-center mt-10">
+      <select
+        class="
+          p-2
+          mx-2
+          h-10
+          border-indigo-700 border-2
+          rounded-lg
+          shadow-xl
+          w-80
+        "
+        name="countries"
+        id="coutries"
+        data-js="select-countrie"
+      >
+        <option>Global</option>
+      </select>
+      <button
+        class="
+          h-10
+          w-20
+          bg-indigo-700
+          hover:bg-indigo-600
+          rounded-xl
+          shadow-xl
+          text-white text-lg
+        "
+        data-js="load-data"
+      >
+        Dados
+      </button>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
